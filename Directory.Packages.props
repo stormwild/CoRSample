@@ -16,4 +16,18 @@
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
+
+  <ItemGroup>
+    <!-- Code coverage tool that integrates with test runners -->
+    <PackageVersion Include="coverlet.collector" Version="6.0.0" />
+
+    <!-- Provides the core infrastructure for .NET testing -->
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+
+    <!-- xUnit testing framework for .NET -->
+    <PackageVersion Include="xunit" Version="2.5.3" />
+
+    <!-- Visual Studio test runner for xUnit tests -->
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
 </Project>
