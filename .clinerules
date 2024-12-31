@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "name": "dependency-addition",
+      "description": "When adding a dependency, first add it to Directory.Packages.props with version, then add it to the relevant csproj file without version",
+      "steps": [
+        {
+          "file": "Directory.Packages.props",
+          "action": "add-package",
+          "include-version": true
+        },
+        {
+          "file": "relevant-project.csproj",
+          "action": "add-package",
+          "include-version": false
+        }
+      ]
+    }
+  ]
+}

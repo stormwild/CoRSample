@@ -27,3 +27,28 @@ If you have any specific questions or need further details, feel free to ask!
 
 - [Compile-time configuration source generation - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/extensions/configuration-generator)
 - [docs/docs/core/extensions/configuration-generator.md at main · dotnet/docs](https://github.com/dotnet/docs/blob/main/docs/core/extensions/configuration-generator.md)
+
+## Central Package Management Rules
+
+This project uses central package management for NuGet package versions.
+
+### Configuration
+
+- Central package management is configured in `Directory.Packages.props`
+- All package versions are managed centrally
+- Projects reference packages without specifying versions
+
+### Rules
+
+1. All NuGet package versions must be defined in `Directory.Packages.props`
+2. Projects must not specify package versions directly
+3. Package versions should be updated centrally
+4. Use the latest stable versions unless specific version is required
+5. Maintain version consistency across all projects
+
+### Benefits
+
+- Single source of truth for package versions
+- Consistent versions across all projects
+- Easier version updates and maintenance
+- Reduced version conflicts
