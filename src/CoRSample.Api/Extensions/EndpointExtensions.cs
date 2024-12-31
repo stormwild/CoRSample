@@ -1,7 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using System.Reflection;
@@ -15,6 +11,12 @@ public interface IEndpoint
 
 public static class EndpointExtensions
 {
+    /// <summary>
+    /// Adds all endpoints in the given assembly to the service collection.
+    /// </summary>
+    /// <param name="services">The service collection to add the endpoints to.</param>
+    /// <param name="assembly">The assembly to scan for endpoints.</param>
+    /// <returns>The service collection.</returns>
     public static IServiceCollection AddEndpoints(
         this IServiceCollection services,
         Assembly assembly)
@@ -31,6 +33,12 @@ public static class EndpointExtensions
         return services;
     }
 
+    /// <summary>
+    /// Maps all endpoints added to the service collection to the <paramref name="app"/>.
+    /// </summary>
+    /// <param name="app">The web application to map the endpoints to.</param>
+    /// <param name="routeGroupBuilder">The route group builder to use for mapping the endpoints. If not provided, the endpoints will be mapped directly to the <paramref name="app"/>.</param>
+    /// <returns>The web application.</returns>
     public static IApplicationBuilder MapEndpoints(
         this WebApplication app,
         RouteGroupBuilder? routeGroupBuilder = null)
