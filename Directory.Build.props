@@ -25,15 +25,6 @@
 
   <!-- Analyzer configurations -->
   <PropertyGroup>
-    <!-- Enables analyzer for trimming unused code in self-contained deployments -->
-    <!-- Use case: Helps identify code that might be removed during trimming in published
-    applications -->
-    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
-
-    <!-- Enables analyzer for single-file deployment issues -->
-    <!-- Use case: Helps identify potential problems when publishing as a single executable file -->
-    <EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
-
     <!-- Enables source generator for configuration binding -->
     <!-- Use case: Improves performance of configuration binding in Minimal APIs -->
     <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>

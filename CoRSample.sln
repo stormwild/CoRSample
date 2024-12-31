@@ -11,6 +11,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Packages.props = Directory.Packages.props
 		global.json = global.json
 		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2BDEB0B3-A8AB-44DB-AFD9-7E346B60F02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoRSample.Api", "src\CoRSample.Api\CoRSample.Api.csproj", "{A1B4F39F-2DDB-43F8-B96F-D912C4236ACC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{54CD921A-491B-48CD-9CB7-352AFD972FC3}"
+	ProjectSection(SolutionItems) = preProject
+		docs\docs.md = docs\docs.md
 	EndProjectSection
 EndProject
 Global
@@ -18,7 +28,17 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B4F39F-2DDB-43F8-B96F-D912C4236ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B4F39F-2DDB-43F8-B96F-D912C4236ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B4F39F-2DDB-43F8-B96F-D912C4236ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B4F39F-2DDB-43F8-B96F-D912C4236ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1B4F39F-2DDB-43F8-B96F-D912C4236ACC} = {2BDEB0B3-A8AB-44DB-AFD9-7E346B60F02A}
+		{54CD921A-491B-48CD-9CB7-352AFD972FC3} = {5E5134F3-8A9F-483A-9056-B408DC754662}
 	EndGlobalSection
 EndGlobal
