@@ -294,3 +294,26 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by the blog post at [dotnet-fullstack-dev.blogspot.com](https://dotnet-fullstack-dev.blogspot.com/)
 - [Unleashing Flexibility in Your .NET API: How the Chain of Responsibility Pattern Can Transform Your Item API! 🚀](https://dotnet-fullstack-dev.blogspot.com/2024/10/unleashing-flexibility-in-your-net-api.html)
 - [Better Use Case for Chain of Responsibility Pattern: Is It Just a Replacement for Multiple If-Else Statements? | by DotNet Full Stack Dev | Dec, 2024 | Medium](https://dotnetfullstackdev.medium.com/better-use-case-for-chain-of-responsibility-pattern-is-it-just-a-replacement-for-multiple-if-else-e32b7c6044ae)
+
+https://devleader.ca/blogPost/5253
+
+https://code-maze.com/csharp-chain-of-responsibility-design-pattern/
+
+https://refactoring.guru/design-patterns/chain-of-responsibility/csharp/example
+
+https://github.com/CodeMazeBlog/CodeMazeGuides/tree/main/csharp-design-patterns/ChainOfResponsibilityPattern
+
+https://devwithjosh.com/understanding-the-chain-of-responsibility-pattern-in-c
+
+https://www.csharptutorial.net/csharp-design-patterns/csharp-chain-of-responsibility-design-pattern/
+
+https://hackernoon.com/how-the-chain-of-responsibility-design-pattern-works-in-c
+
+https://dotnettutorials.net/lesson/chain-of-responsibility-design-pattern/
+
+https://www.developmentsimplyput.com/post/chain-of-responsibility-design-pattern-in-net-c
+
+
+
+
+
