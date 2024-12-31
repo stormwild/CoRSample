@@ -1,0 +1,41 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+
+  <!-- Core build settings -->
+  <PropertyGroup>
+    <!-- Specifies the target framework version (.NET 8 in this case) -->
+    <!-- Use case: Ensures all projects in the solution use the same framework version -->
+    <TargetFramework>net8.0</TargetFramework>
+
+    <!-- Automatically imports common namespaces based on project type -->
+    <!-- Use case: Reduces boilerplate code by automatically including common namespaces like
+    System, System.Linq -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Enables nullable reference types feature -->
+    <!-- Use case: Helps prevent null reference exceptions by making reference types non-nullable by
+    default -->
+    <Nullable>enable</Nullable>
+
+    <!-- Treats all warnings as errors -->
+    <!-- Use case: Ensures code quality by preventing builds with warnings, useful in CI/CD
+    pipelines -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <!-- Analyzer configurations -->
+  <PropertyGroup>
+    <!-- Enables analyzer for trimming unused code in self-contained deployments -->
+    <!-- Use case: Helps identify code that might be removed during trimming in published
+    applications -->
+    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+
+    <!-- Enables analyzer for single-file deployment issues -->
+    <!-- Use case: Helps identify potential problems when publishing as a single executable file -->
+    <EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
+
+    <!-- Enables source generator for configuration binding -->
+    <!-- Use case: Improves performance of configuration binding in Minimal APIs -->
+    <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>
+  </PropertyGroup>
+</Project>

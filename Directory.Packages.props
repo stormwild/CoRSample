@@ -1,0 +1,15 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <PropertyGroup>
+    <!-- Enables central package management for all projects -->
+    <!-- Allows defining package versions in a single location -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+
+    <!-- Enables transitive package version pinning -->
+    <!-- Transitive dependencies are packages that your direct dependencies depend on -->
+    <!-- Example: If you use PackageA which depends on PackageB, PackageB is a transitive dependency -->
+    <!-- This setting ensures transitive dependencies use the same versions as direct dependencies -->
+    <!-- Prevents version conflicts and provides more predictable builds -->
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+</Project>
